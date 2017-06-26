@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+  <remote  name="yocto"
+           fetch="git://git.yoctoproject.org/" />
+
+  <remote  name="oe"
+           fetch="git://git.openembedded.org/" />
+
+  <remote  name="genivi"
+           fetch="git://github.com/GENIVI/" />
+
+  <remote  name="github"
+           fetch="git://github.com/" />
+
+  <remote name="bushi"
+           fetch="https://github.com/SeonkonChoi/" />
+
+
+  <project path="poky" name="poky"
+           groups="yocto" remote="yocto" revision="pyro" >
+	   <!-- revision="f01b909a266498853e6b3f10e6b39f2d95148129" -->
+  </project>
+
+  <project path="meta-openembedded" name="meta-openembedded"
+           groups="oe" remote="oe" revision="pyro" >
+	   <!-- revision="5e82995148a2844c6f483ae5ddd1438d87ea9fb7" -->
+  </project>
+
+  <project path="meta-ivi" name="meta-ivi"
+           groupes="yocto" remote="genivi" revision="13.0" >
+	   <!-- revision="75f11198bc1f9819c4714040b99caffd16faac2b" -->
+  </project>
+
+  <project path="meta-virtualization" name="meta-virtualization"
+           groups="yocto" remote="yocto" revision="pyro" >
+	   <!-- revision="dd49614c70364a11dc50798f32f1b2ffa3d0409e" -->
+  </project>
+
+  <project path="meta-intel" name="meta-intel"
+           groups="intel" remote="yocto" revision="pyro" >
+	   <!-- revision="7e8f98aa326f16edd679a95f7bb2daf4256479f3" -->
+  </project>
+
+  <project path="meta-bushi" name="meta-bushi"
+           groups="bushi" remote="bushi" revision="pyro" >
+  </project>
+
+</manifest>
